@@ -22,11 +22,11 @@ export default function Home() {
               text-white backdrop-blur-sm rounded-full px-6 py-2 mt-4">Transformando lares em:</span>
             </h2>
             <div className="mt-10 flex flex-row items-center justify-center gap-6 ">
-              <h2 className="mt-2 px-6 py-2 text-2xl font-medium tracking-wider
+              <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
               text-white bg-red-500/40 backdrop-blur-sm rounded-full">Coração de Maria</h2>
-              <h2 className="mt-2 px-6 py-2 text-2xl font-medium tracking-wider
+              <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
               text-white bg-red-500/40 backdrop-blur-sm rounded-full">Conceição do Jacuípe</h2>
-              <h2 className="mt-2 px-6 py-2 text-2xl font-medium tracking-wider
+              <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
               text-white bg-red-500/40 backdrop-blur-sm rounded-full">Irará</h2>
             </div>
           </div>
