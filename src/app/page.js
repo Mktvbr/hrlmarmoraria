@@ -39,19 +39,52 @@ export default function Home() {
           />
 
         </section>
-        {/* <section className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black/80 to-transparent" /> */}
 
-        <section className="relative py-32 min-h-[90vh] flex items-center justify-center">
+        <section className="relative pt-18 pb-28 min-h-[100vh] flex items-center justify-center">
           <Image
             src="/marmorebrancabg.png"
             alt="Logo Image"
             fill
             className=" absolute object-cover -z-10 opacity-30 pointer-events-none"
           />
+          <div className="flex flex-row max-[75rem]:flex-col  gap-20 max-w-7xl px-8">
+            <div className="flex flex-col elementor-widget-container 
+            backdrop-blur-sm tracking-wide px-2 py-4 rounded-lg text-outline-soft
+            leading-relaxed text-left max-w-xl gap-6">
+              <p className="text-lg text-white">
+                Há mais de cinco anos, a HRL Mármores e Granitos transforma ambientes 
+                em verdadeiras expressões de personalidade, elegância e permanência. 
+                Reconhecida e premiada quatro vezes como a melhor marmoraria da região,
+                nossa trajetória é marcada pela busca constante pela excelência e pelo 
+                compromisso inegociável com a qualidade.
+              </p>
+              <p className="text-lg text-white">
+                Cada projeto nasce de um propósito: criar espaços que encantam, acolhem
+                e valorizam. Trabalhamos com mármores e granitos cuidadosamente selecionados, 
+                unindo sofisticação estética, resistência e acabamento impecável para transformar
+                ambientes em verdadeiras identidade de luxo. Mais do que peças sob medida, 
+                desenvolvemos elegância.
+              </p>
+            </div>
+            <Image
+              src="/premiacao.jpg"
+              alt="Premiação"
+              width={600}
+              height={400}
+              className=" w-full h-auto rounded-lg shadow-lg  object-cover"
+            />
+          </div>
         </section>
+        <section className="relative pt-18 pb-28 min-h-[100vh] flex items-center justify-center">
+          <Image
+            src="/verde.jpg"
+            alt="Background Image"  
+            fill
+            className=" absolute object-cover -z-10 opacity-30 pointer-events-none"
+          />
+          </section>
 
       </main>
-
 
     </div>
   );
