@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Header from "./components/header";
+import Carousel from "./components/carousel";
+
 
 export default function Home() {
   return (
     <div className="font-sans min-h-screen pt-0 gap-16">
       <Header className="z-30" />
-      <main className="max-w-7xl" >
+      <main className=" w-full max-w-7xl mx-auto" >
 
         <section className="relative flex-grow flex mt-0 pt-0 min-h-screen items-center justify-center">
           <div className="flex flex-col items-center ">
@@ -52,17 +54,17 @@ export default function Home() {
             backdrop-blur-sm tracking-wide px-2 py-4 rounded-lg text-outline-soft
             leading-relaxed text-left max-w-xl gap-6">
               <p className="text-lg text-white">
-                Há mais de cinco anos, a HRL Mármores e Granitos transforma ambientes 
-                em verdadeiras expressões de personalidade, elegância e permanência. 
+                Há mais de cinco anos, a HRL Mármores e Granitos transforma ambientes
+                em verdadeiras expressões de personalidade, elegância e permanência.
                 Reconhecida e premiada quatro vezes como a melhor marmoraria da região,
-                nossa trajetória é marcada pela busca constante pela excelência e pelo 
+                nossa trajetória é marcada pela busca constante pela excelência e pelo
                 compromisso inegociável com a qualidade.
               </p>
               <p className="text-lg text-white">
                 Cada projeto nasce de um propósito: criar espaços que encantam, acolhem
-                e valorizam. Trabalhamos com mármores e granitos cuidadosamente selecionados, 
+                e valorizam. Trabalhamos com mármores e granitos cuidadosamente selecionados,
                 unindo sofisticação estética, resistência e acabamento impecável para transformar
-                ambientes em verdadeiras identidade de luxo. Mais do que peças sob medida, 
+                ambientes em verdadeiras identidade de luxo. Mais do que peças sob medida,
                 desenvolvemos elegância.
               </p>
             </div>
@@ -75,14 +77,21 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="relative pt-18 pb-28 min-h-[100vh] flex items-center justify-center">
+        <section className="relative pt-18 pb-28 min-h-[100vh] ">
+          <div className="max-w-7xl mx-auto px-8">
+            <h2 className="text-5xl text-white mb-12 text-center">
+              Nossos Trabalhos
+            </h2>
+
+            <Carousel />
+          </div>
           <Image
             src="/verde.jpg"
             alt="Background Image"  
             fill
             className=" absolute object-cover -z-10 opacity-30 pointer-events-none"
           />
-          </section>
+        </section>
 
       </main>
 
