@@ -3,6 +3,7 @@
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
+import { useEffect } from "react";
 
 export default function Carousel() {
     const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -16,7 +17,17 @@ export default function Carousel() {
 
     const scrollNext = useCallback(() => {
         if (emblaApi) emblaApi.scrollNext();
+
     }, [emblaApi]);
+    useEffect(() => {
+        if (!emblaApi) return
+
+        const interval = setInterval(() => {
+            emblaApi.scrollNext()
+        }, 6000)
+
+        return () => clearInterval(interval)
+    }, [emblaApi])
 
     const images = [
         "/mesa.png",
@@ -36,7 +47,7 @@ export default function Carousel() {
                     {images.map((src, index) => (
                         <div
                             key={index}
-                                className="
+                            className="
                                 pl-4
                                 flex-[0_0_90%]
                                 sm:flex-[0_0_48%]
