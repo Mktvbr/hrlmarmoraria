@@ -17,7 +17,7 @@ export default function Home() {
           href=" https://wa.me/557582500131"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 mb-0 pb-0 right-6 z-50"
+          className="fixed bottom-6 mb-0 pb-0 right-6 z-40"
         >
           <Image
             src="/icone.png"
@@ -42,11 +42,13 @@ export default function Home() {
               <span className="text-2xl font-medium tracking-wider
               text-white backdrop-blur-sm rounded-full px-6 py-2 mt-4">Transformando lares em:</span>
             </h2>
-            <div className="mt-10 flex flex-row items-center justify-center gap-6 ">
+            <div className="mt-10 flex flex-row max-[45rem]:flex-col items-center justify-center gap-6 ">
               <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
               text-white bg-red-500/40 backdrop-blur-sm rounded-full">Coração de Maria</h2>
               <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
               text-white bg-red-500/40 backdrop-blur-sm rounded-full">Conceição do Jacuípe</h2>
+              <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
+              text-white bg-red-500/40 backdrop-blur-sm rounded-full">Feira de Santana</h2>
               <h2 className="mt-2 px-6 py-2 max-[45rem]:text-base text-2xl font-medium tracking-wider
               text-white bg-red-500/40 backdrop-blur-sm rounded-full">Irará</h2>
             </div>
@@ -96,7 +98,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section id='servicos' className="relative pt-18 pb-28 min-h-[100vh] ">
+        <section id='servicos' className="relative pt-18 pb-28 min-h-[50vh]  ">
           <div className="max-w-7xl mx-auto px-8">
             <h2 className="text-5xl text-white mb-12 text-center">
               Nossos Trabalhos
@@ -111,7 +113,7 @@ export default function Home() {
             className=" absolute object-cover -z-10 opacity-30 pointer-events-none"
           />
         </section>
-        <section id="contato" className="relative pt-18 bg-amber-50 pb-15 min-h-[50vh] flex items-center justify-center">
+        <section id="contato" className="relative pt-18 bg-amber-50 pb-15 min-h-[50vh] flex items-center justify-center z-50">
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-4xl text-gray-800 mb-4">Entre em Contato</h2>
             <p className="text-lg text-gray-600 mb-6 text-center max-w-xl">
