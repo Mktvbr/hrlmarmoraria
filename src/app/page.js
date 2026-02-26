@@ -14,7 +14,7 @@ export default function Home() {
       <main className=" w-full max-w-7xl mx-auto" >
 
         <a
-          href="https://wa.me/5599999999999"
+          href=" https://wa.me/557582500131"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 mb-0 pb-0 right-6 z-50"
@@ -111,7 +111,7 @@ export default function Home() {
             className=" absolute object-cover -z-10 opacity-30 pointer-events-none"
           />
         </section>
-        <section id="contato" className="relative pt-18 bg-amber-50 pb-28 min-h-[50vh] flex items-center justify-center">
+        <section id="contato" className="relative pt-18 bg-amber-50 pb-15 min-h-[50vh] flex items-center justify-center">
           <div className="flex flex-col items-center gap-6">
             <h2 className="text-4xl text-gray-800 mb-4">Entre em Contato</h2>
             <p className="text-lg text-gray-600 mb-6 text-center max-w-xl">
@@ -119,29 +119,41 @@ export default function Home() {
               Entre em contato conosco e transforme seu projeto em realidade.
             </p>
             <div className="flex flex-row items-center gap-4">
-            <Link
-              href="https://wa.me/5599999999999"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-600 transition-colors"
-            >
-              <BsWhatsapp size={24} />
-              Fale Conosco pelo WhatsApp
-            </Link>
-            <Link
-              href="https://www.instagram.com/hrl_marmores_e_granitos/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-red-700 text-white px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition-colors"
-            >
-              <BsInstagram size={24} />
-              Siga-nos no Instagram
-            </Link>
+              <Link
+                href="https://wa.me/557582500131"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+              >
+                <BsWhatsapp size={24} />
+                Fale Conosco pelo WhatsApp
+              </Link>
+              <Link
+                href="https://www.instagram.com/hrl_marmores_e_granitos/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-red-700 text-white px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition-colors"
+              >
+                <BsInstagram size={24} />
+                Siga-nos no Instagram
+              </Link>
 
             </div>
-            <h1 className="flex flex-row"><p className="text-gray-600">produzido por </p> <Link href='https://www.instagram.com/sharkwebbrasil/' target="_blank" rel="noopener noreferrer" className="text-indigo-800 hover:text-gray-800"> SharkWeb</Link></h1>
+            <div className="flex items-center gap-1 text-sm text-gray-500 mt-10">
+              <span>Produzido por</span>
+              <Link
+                href="https://www.instagram.com/sharkwebbrasil/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-700 hover:text-indigo-900 
+                transition-colors duration-300 font-semibold
+                "
+              >
+                SharkWeb
+              </Link>
+            </div>
           </div>
-          
+
         </section>
 
       </main>
