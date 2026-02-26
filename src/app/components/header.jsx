@@ -24,46 +24,35 @@ export default function Header() {
           quality={100} priority={true} />
 
         <div className={isOpen ? "sm:hidden absolute top-20 left-0 w-full bg-amber-50 z-10 flex flex-col items-center py-4" : "hidden sm:flex items-center invisible sm:visible"}>
-        <div className={isOpen ? "flex flex-col items-center gap-4" : "flex items-center"}>
+          <div className={isOpen ? "flex flex-col items-center gap-4" : "flex items-center"}>
 
-          <Link data-active={pathname === '/catalogo'} href="/catalogo" className={`
-          relative ml-10 sm:0 text-2xl font-bold text-gray-800 hover:text-red-800     
-          ${pathname === "/catalogo"
-              ? "h-8 border-b-2 text-red-800 border-red-800"
-              : ` 
-          transition-colors
-          after:content-[''] after:absolute after:left-1/2 after:bottom-0 
-          after:w-0 after:h-[2px] after:bg-red-800 
-          after:transition-all after:duration-300 
-          hover:after:w-full hover:after:left-0 `} 
-        `}>Catálogo</Link>
-
-          <Link data-active={pathname === '/contato'} href="/contato" className={`          
+            <Link href="#contato" className={`          
           relative ml-10 text-2xl font-bold text-gray-800 hover:text-red-800 
-          ${pathname === "/contato"
-              ? "h-8 border-b-2 text-red-800 border-red-800"
-              : ` 
-          transition-colors
-          after:content-[''] after:absolute after:left-1/2 after:bottom-0 
+          transition-colors after:content-[''] after:absolute after:left-1/2 after:bottom-0 
           after:w-0 after:h-[2px] after:bg-red-800 
           after:transition-all after:duration-300 
-          hover:after:w-full hover:after:left-0 `} 
+          hover:after:w-full hover:after:left-0
         `}>
-            Contato
-          </Link>
+              Contato
+            </Link>
 
-          <Link data-active={pathname === '/sobre'} href="/sobre" className={`          
+            <Link href="#servicos" className={`          
           relative ml-10 text-2xl font-bold text-gray-800 hover:text-red-800 
-          ${pathname === "/sobre"
-              ? " h-8 border-b-2 text-red-800 border-red-800"
-              : ` 
-          transition-colors
-          after:content-[''] after:absolute after:left-1/2 after:bottom-0 
+          transition-colors after:content-[''] after:absolute after:left-1/2 after:bottom-0 
           after:w-0 after:h-[2px] after:bg-red-800 
           after:transition-all after:duration-300 
-          hover:after:w-full hover:after:left-0 `} 
+          hover:after:w-full hover:after:left-0
+        `}>Serviços</Link>
+
+
+            <Link href="#sobre" className={`          
+          relative ml-10 text-2xl font-bold text-gray-800 hover:text-red-800 
+          transition-colors after:content-[''] after:absolute after:left-1/2 after:bottom-0 
+          after:w-0 after:h-[2px] after:bg-red-800 
+          after:transition-all after:duration-300 
+          hover:after:w-full hover:after:left-0
         `}>Sobre</Link>
-        </div>
+          </div>
         </div>
 
 

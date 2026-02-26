@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Header from "./components/header";
 import Carousel from "./components/carousel";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+
+import Link from "next/link";
 
 
 export default function Home() {
@@ -8,6 +12,21 @@ export default function Home() {
     <div className="font-sans min-h-screen pt-0 gap-16">
       <Header className="z-30" />
       <main className=" w-full max-w-7xl mx-auto" >
+
+        <a
+          href="https://wa.me/5599999999999"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 mb-0 pb-0 right-6 z-50"
+        >
+          <Image
+            src="/icone.png"
+            alt="Fale conosco pelo WhatsApp"
+            width={220}
+            height={80}
+            className="drop-shadow-xl hover:scale-105 transition-transform duration-300"
+          />
+        </a>
 
         <section className="relative flex-grow flex mt-0 pt-0 min-h-screen items-center justify-center">
           <div className="flex flex-col items-center ">
@@ -42,7 +61,7 @@ export default function Home() {
 
         </section>
 
-        <section className="relative pt-18 pb-28 min-h-[100vh] flex items-center justify-center">
+        <section id='sobre' className="relative pt-18 pb-28 min-h-[100vh] flex items-center justify-center">
           <Image
             src="/marmorebrancabg.png"
             alt="Logo Image"
@@ -77,7 +96,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="relative pt-18 pb-28 min-h-[100vh] ">
+        <section id='servicos' className="relative pt-18 pb-28 min-h-[100vh] ">
           <div className="max-w-7xl mx-auto px-8">
             <h2 className="text-5xl text-white mb-12 text-center">
               Nossos Trabalhos
@@ -87,10 +106,42 @@ export default function Home() {
           </div>
           <Image
             src="/verde.jpg"
-            alt="Background Image"  
+            alt="Background Image"
             fill
             className=" absolute object-cover -z-10 opacity-30 pointer-events-none"
           />
+        </section>
+        <section id="contato" className="relative pt-18 bg-amber-50 pb-28 min-h-[50vh] flex items-center justify-center">
+          <div className="flex flex-col items-center gap-6">
+            <h2 className="text-4xl text-gray-800 mb-4">Entre em Contato</h2>
+            <p className="text-lg text-gray-600 mb-6 text-center max-w-xl">
+              Para orçamentos, dúvidas ou consultas, estamos à disposição para ajudar.
+              Entre em contato conosco e transforme seu projeto em realidade.
+            </p>
+            <div className="flex flex-row items-center gap-4">
+            <Link
+              href="https://wa.me/5599999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+            >
+              <BsWhatsapp size={24} />
+              Fale Conosco pelo WhatsApp
+            </Link>
+            <Link
+              href="https://www.instagram.com/hrl_marmores_e_granitos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-red-700 text-white px-6 py-3 rounded-full shadow-lg hover:bg-pink-600 transition-colors"
+            >
+              <BsInstagram size={24} />
+              Siga-nos no Instagram
+            </Link>
+
+            </div>
+            <h1 className="flex flex-row"><p className="text-gray-600">produzido por </p> <Link href='https://www.instagram.com/sharkwebbrasil/' target="_blank" rel="noopener noreferrer" className="text-indigo-800 hover:text-gray-800"> SharkWeb</Link></h1>
+          </div>
+          
         </section>
 
       </main>
